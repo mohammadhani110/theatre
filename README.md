@@ -34,3 +34,31 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+//double animation
+
+ <!-- <motion.div
+          className="slide-out-left bg-white z-20"
+          initial={{ scaleX: 1 }}
+          animate={{ scaleX: 0 }}
+          exit={{ scaleX: 0 }}
+          transition={{ duration: 2, ease: [0.22, 1, 0.36, 1] }}
+        ></motion.div>
+        <motion.div
+          className="slide-in-left bg-white z-20"
+          initial={{ scaleX: 0 }}
+          animate={{ scaleX: 0 }}
+          exit={{ scaleX: 1 }}
+          transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
+        ></motion.div>
+        <motion.div
+          className="slide-out-right bg-white"
+          initial={{ scaleX: 1 }}
+          animate={{ scaleX: 0 }}
+          exit={{ scaleX: 0 }}
+          transition={{
+            duration: 2,
+            ease: [0.22, 1, 0.36, 1],
+            delay: 0,
+          }}
+        ></motion.div> -->
