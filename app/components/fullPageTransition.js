@@ -4,7 +4,6 @@ import { useAnimate } from "framer-motion";
 
 const FullPageTransition = () => {
   const [scope, animate] = useAnimate();
-  const [maskedLogo, setMaskedLogo] = useState(false);
 
   useEffect(() => {
     const animateTransition = async () => {
@@ -42,6 +41,14 @@ const FullPageTransition = () => {
       ]);
       await Promise.all([
         animate(
+          "#maskedLogo",
+          {
+            scale: [0, 100],
+            // background: "transparent",
+          },
+          { duration: 5, ease: [0.22, 1, 0.36, 1] }
+        ),
+        animate(
           "#first",
           {
             x: ["-50%", "-100%"],
@@ -61,17 +68,9 @@ const FullPageTransition = () => {
           }
         ),
       ]);
-      await animate(
-        "#maskedLogo",
-        {
-          scale: [0, 100],
-        },
-        { duration: 3, ease: [0.22, 1, 0.36, 1] }
-      );
 
       // setMaskedLogo(true);
     };
-    // Initiate the transition animation when the component mounts
     // if (!maskedLogo) animateTransition();
     animateTransition();
   }, [scope?.current]);
@@ -91,8 +90,8 @@ const FullPageTransition = () => {
       <div
         id="maskedLogo"
         style={{
-          width: 150,
-          height: 150,
+          width: 360,
+          height: 520,
           position: "absolute",
           background: "white",
           alignSelf: "center",

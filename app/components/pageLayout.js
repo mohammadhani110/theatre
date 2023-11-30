@@ -71,7 +71,7 @@ export default function PageLayout({ children }) {
         <main className="flex min-h-screen flex-col items-center justify-between">
           {children}
         </main>
-        <div className="z-30 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 ">
+        {/* <div className="z-30 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 ">
           <Image
             src="https://images.pexels.com/photos/9754/mountains-clouds-forest-fog.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             width={100}
@@ -104,7 +104,7 @@ export default function PageLayout({ children }) {
               ease: [0.22, 1, 0.36, 1],
             }}
           ></motion.div>
-        )}
+        )} */}
         {/* <motion.div
           className="slide-out-left bg-white z-20"
           initial={{ scaleX: 1 }}
